@@ -1,0 +1,6 @@
+{
+  "name": "SMS Nettoyage & Multi-Services",
+  "description": "Expert du nettoyage de fin de chantier, entretien régulier de bureaux et maisons, plomberie, maçonnerie et décoration. Devis rapide et remise en état impeccable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
