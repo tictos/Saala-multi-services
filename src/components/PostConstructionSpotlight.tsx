@@ -1,6 +1,6 @@
 import React from 'react';
-import { Sparkles, CheckCircle2, ShieldCheck, ArrowRight, Layers, Eye, Brush, Flame } from 'lucide-react';
-import { BRAND_INFO } from '../data/servicesData';
+import { Sparkles, ArrowRight, Layers, Eye, Brush, Flame } from 'lucide-react';
+import imgSparklingClean from '../assets/images/post_construction_sparkling_clean_1791048225981.jpg';
 
 interface PostConstructionSpotlightProps {
   onOpenBooking: () => void;
@@ -44,7 +44,7 @@ export const PostConstructionSpotlight: React.FC<PostConstructionSpotlightProps>
           <div className="lg:col-span-6 space-y-6">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-neutral-200 aspect-[4/3] bg-neutral-900">
               <img
-                src="/src/assets/images/post_construction_sparkling_clean_1791048225981.jpg"
+                src={imgSparklingClean}
                 alt="Résultat après nettoyage de fin de chantier"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

@@ -1,5 +1,11 @@
 import { ServiceItem, Testimonial } from '../types';
 
+import imgSparklingClean from '../assets/images/post_construction_sparkling_clean_1791048225981.jpg';
+import imgElectricity from '../assets/images/electricity_service_1791055867936.jpg';
+import imgPlumbing from '../assets/images/plumbing_installation_service_1791048235886.jpg';
+import imgMasonry from '../assets/images/masonry_paving_stone_service_1791048245603.jpg';
+import imgDecoration from '../assets/images/interior_garden_decoration_service_1791048255748.jpg';
+
 export const BRAND_INFO = {
   name: "SMS Nettoyage & Multi-Services",
   shortName: "SMS Pro Services",
@@ -29,7 +35,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Élimination complète des résidus de plâtre, ciment, colle, peinture et poussières fines pour rendre votre maison, villa ou bureau immédiatement habitable.",
     fullDesc: "Après des travaux de construction ou de rénovation à Conakry ou dans la sous-région, les ouvriers laissent inévitablement des traces tenaces. Notre équipe spécialisée intervient avec du matériel industriel (monobrosses haute pression, aspirateurs eau et poussière certifiés HEPA, décapants neutres) pour restituer des espaces immaculés, sains et prêts pour l'emménagement.",
     category: "cleaning",
-    image: "/src/assets/images/post_construction_sparkling_clean_1791048225981.jpg",
+    image: imgSparklingClean,
     features: [
       "Décapage minutieux des traces de ciment, plâtre, peinture et voile de colle",
       "Aspiration en profondeur de toutes les poussières fines dans les moindres recoins",
@@ -47,7 +53,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Câblage complet, pose de tableaux électriques, disjoncteurs, luminaires, prises, dépannage et mise aux normes sécurisées.",
     fullDesc: "Nos électriciens qualifiés interviennent sur vos chantiers neufs ou en rénovation pour concevoir des installations électriques fiables et conformes. De la distribution des circuits à la pose soignée de vos luminaires décoratifs, spots LED, disjoncteurs différentiels et prises de force.",
     category: "electricity",
-    image: "/src/assets/images/electricity_service_1791055867936.jpg",
+    image: imgElectricity,
     features: [
       "Installation et câblage complet pour maisons neuves, villas, bureaux et commerces",
       "Pose de tableaux de répartition, disjoncteurs divisionnaires et différentiels",
@@ -64,7 +70,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Nettoyage quotidien ou périodique pour bureaux, locaux commerciaux, ambassades, banques, copropriétés et résidences privées.",
     fullDesc: "Gardez vos espaces professionnels et résidentiels impeccables tout au long de l'année. Nous concevons des forfaits d'entretien réguliers adaptés à vos besoins : interventions avant l'ouverture des bureaux, en journée discrète ou le soir après la fermeture.",
     category: "subscription",
-    image: "/src/assets/images/post_construction_sparkling_clean_1791048225981.jpg",
+    image: imgSparklingClean,
     features: [
       "Fréquences modulables : quotidien (5j/7 ou 7j/7), 3x/semaine, ou hebdomadaire",
       "Désinfection des points de contact fréquents (poignées, claviers, rampes)",
@@ -81,7 +87,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Adduction et alimentation en eau de résidences, forages, raccordements réseaux, installations sanitaires et dépannages.",
     fullDesc: "Nos artisans plombiers qualifiés assurent l'alimentation en eau potable de vos constructions neuves, l'installation complète des réseaux de tuyauterie (cuivre, multicouche, PPR/PEX) ainsi que le montage de vos équipements de plomberie et sanitaires.",
     category: "plumbing",
-    image: "/src/assets/images/plumbing_installation_service_1791048235886.jpg",
+    image: imgPlumbing,
     features: [
       "Alimentation générale en eau de maison neuve, villa, bureau et collectivité",
       "Pose de compteurs divisionnaires, surpresseurs, cuves d'eau et réducteurs de pression",
@@ -98,7 +104,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Pose professionnelle de dalettes de terrasse, pavés autobloquants, dallages extérieurs, élévation de murs et clôtures.",
     fullDesc: "Donnez de la structure et du cachet à vos extérieurs et intérieurs. Nos maçons chevronnés réalisent la pose de dallages décoratifs, la création d'allées pavées carrossables, le montage de murets de clôture et les reprises soignées de maçonnerie.",
     category: "masonry",
-    image: "/src/assets/images/masonry_paving_stone_service_1791048245603.jpg",
+    image: imgMasonry,
     features: [
       "Posage de dalettes de terrasse, pavés autobloquants, dalles béton et pierres",
       "Construction de murs de clôture, cloisons de séparation et murets paysagers",
@@ -115,7 +121,7 @@ export const SERVICES_LIST: ServiceItem[] = [
     shortDesc: "Sublimation de vos pièces de vie, peintures décoratives, habillages muraux et création d'espaces verts & cours paysagères.",
     fullDesc: "Harmonisez votre cadre de vie dès la fin de votre chantier. Notre équipe déco et paysagisme apporte la touche finale : harmonisation des couleurs intérieures, application d'enduits décoratifs et conception d'espaces verts verdoyants adaptés au climat local.",
     category: "decoration",
-    image: "/src/assets/images/interior_garden_decoration_service_1791048255748.jpg",
+    image: imgDecoration,
     features: [
       "Décoration intérieure personnalisée (peintures contemporaines, éclairages, parements)",
       "Aménagement paysager de jardins, terrasses et cours de villa",

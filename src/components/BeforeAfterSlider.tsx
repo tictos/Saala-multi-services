@@ -1,5 +1,8 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { Sparkles, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+
+import imgSparklingClean from '../assets/images/post_construction_sparkling_clean_1791048225981.jpg';
+import imgDustyMess from '../assets/images/post_construction_dusty_mess_1791048209990.jpg';
 
 interface BeforeAfterSliderProps {
   onOpenBooking: () => void;
@@ -36,14 +39,14 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lime-100 text-lime-800 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-lime-600" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 text-emerald-700" />
             <span>Transformation Réelle Post-Travaux</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-neutral-900 tracking-tight">
             Glissez pour voir la différence{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-lime-600 to-emerald-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-blue-600">
               Avant / Après Chantier
             </span>
           </h2>
@@ -69,14 +72,14 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
             >
               {/* After Image (Background) */}
               <img
-                src="/src/assets/images/post_construction_sparkling_clean_1791048225981.jpg"
+                src={imgSparklingClean}
                 alt="Après nettoyage de fin de chantier impeccable"
                 referrerPolicy="no-referrer"
                 className="absolute inset-0 w-full h-full object-cover"
               />
 
               {/* After Tag */}
-              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-emerald-950/85 backdrop-blur-md text-lime-400 font-bold text-xs sm:text-sm border border-lime-400/30 shadow-lg whitespace-nowrap">
+              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-emerald-950/85 backdrop-blur-md text-emerald-300 font-bold text-xs sm:text-sm border border-emerald-400/30 shadow-lg whitespace-nowrap">
                 <span className="sm:hidden">✨ Après</span>
                 <span className="hidden sm:inline">✨ Après : Prêt à Habiter</span>
               </div>
@@ -87,7 +90,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                 style={{ width: `${sliderPosition}%` }}
               >
                 <img
-                  src="/src/assets/images/post_construction_dusty_mess_1791048209990.jpg"
+                  src={imgDustyMess}
                   alt="Avant nettoyage fin de chantier avec traces de travaux"
                   referrerPolicy="no-referrer"
                   className="absolute inset-0 w-full h-full object-cover max-w-none"
@@ -109,7 +112,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                 className="absolute top-0 bottom-0 w-1 bg-white shadow-[0_0_10px_rgba(0,0,0,0.4)] cursor-ew-resize z-20 flex items-center justify-center"
                 style={{ left: `${sliderPosition}%` }}
               >
-                <div className="w-10 h-10 -ml-4.5 rounded-full bg-neutral-900 border-2 border-lime-400 text-lime-400 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
+                <div className="w-10 h-10 -ml-4.5 rounded-full bg-neutral-900 border-2 border-emerald-400 text-emerald-400 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform">
                   <div className="flex items-center gap-0.5 text-xs font-black">
                     <span>◀</span>
                     <span>▶</span>
@@ -134,7 +137,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
 
               <ul className="space-y-3.5 text-sm text-neutral-700">
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-lime-100 text-lime-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
                   <div>
                     <strong className="text-neutral-900 block font-semibold">Voile de ciment & laitance :</strong>
                     Dissolution mécanique sans abîmer les joints neufs de carrelage.
@@ -142,7 +145,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-lime-100 text-lime-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
                   <div>
                     <strong className="text-neutral-900 block font-semibold">Gouttes de peinture & plâtre :</strong>
                     Grattez avec des lames professionnelles de sécurité sur vitres et plinthes.
@@ -150,7 +153,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-lime-100 text-lime-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
                   <div>
                     <strong className="text-neutral-900 block font-semibold">Poussière volatile & gaines :</strong>
                     Aspiration industrielle HEPA pour un air intérieur pur et respirable.
@@ -158,7 +161,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                 </li>
 
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-lime-100 text-lime-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
+                  <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 font-bold">✓</div>
                   <div>
                     <strong className="text-neutral-900 block font-semibold">Vitrages & baies coulissantes :</strong>
                     Dépoussiérage des rails, nettoyage chimique doux et brillance miroir.
@@ -172,7 +175,7 @@ export const BeforeAfterSlider: React.FC<BeforeAfterSliderProps> = ({ onOpenBook
                   className="w-full py-3.5 px-5 rounded-xl bg-neutral-950 text-white hover:bg-neutral-800 font-bold text-sm flex items-center justify-center gap-2 transition-all hover:scale-[1.01] active:scale-95 cursor-pointer shadow-md"
                 >
                   <span>Réserver mon Nettoyage Chantier</span>
-                  <ArrowRight className="w-4 h-4 text-lime-400" />
+                  <ArrowRight className="w-4 h-4 text-emerald-400" />
                 </button>
               </div>
 
