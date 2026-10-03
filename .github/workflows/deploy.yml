@@ -1,21 +1,17 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Déclenchement automatique lors d'un push sur la branche principale
   push:
     branches:
       - main
       - master
-  # Permet également de lancer le déploiement manuellement depuis l'onglet Actions
   workflow_dispatch:
 
-# Permissions requises pour déployer sur GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Évite les conflits si plusieurs déploiements se lancent en même temps
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -33,10 +29,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies (with legacy peer deps)
+        run: npm install --legacy-peer-deps
 
-      - name: Build static site with Vite
+      - name: Build static site
         run: npm run build
 
       - name: Upload artifact for GitHub Pages
